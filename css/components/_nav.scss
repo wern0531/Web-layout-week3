@@ -1,0 +1,52 @@
+nav {
+    background-color: $primary;
+    .container {
+      display: flex;
+      align-items: center;
+      @include mobile {
+        max-width: 100%;
+        padding: 0;
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+    .logo {
+      padding: 12px 0;
+      @include mobile {
+        padding: 12px 15px;
+      }
+    }
+    img {
+      width: 80px;
+      height: auto;
+    }
+    ul {
+      display: flex;
+      margin-left: auto;
+      font-size: 20px;
+      @include mobile {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    li {
+      margin-right: 64px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include mobile {
+        width: 50%;
+        margin: 0;
+        padding: 12px 0;
+        text-align: center;
+        border: 1px solid white;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    @include mobile {
+      padding: 0;
+    }
+  }

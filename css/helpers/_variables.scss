@@ -1,0 +1,32 @@
+// color
+$primary: #aa0601;
+$secondary: #fbf2f2;
+$textColor: #650300;
+
+// text-size
+
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin container {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+//992
+@mixin container-md {
+  max-width: 968px;
+  padding: 0 36px;
+}
+//767
+@mixin container-sm {
+  max-width: 743px;
+  padding: 0 12px;
+} 
